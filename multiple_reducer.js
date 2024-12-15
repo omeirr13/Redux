@@ -70,6 +70,7 @@ store.dispatch({
     payload: 90
 });
 
+//both reducers will take the action, one will accept one will reject
 store.dispatch(orderPizza());
 store.dispatch(orderPizza());
 store.dispatch(orderBurger());
