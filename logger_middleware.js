@@ -1,9 +1,8 @@
 const redux = require('redux');
 const createStore = redux.createStore;
-const applyMiddleware = redux.applyMiddleware();
+const applyMiddleware = redux.applyMiddleware;
 const combineReducers = redux.combineReducers;
 const reduxLogger = require('redux-logger');
-const createLogger = reduxLogger.createLogger();
 const ORDER_PIZZA = "ORDER_PIZZA";
 const ORDER_BURGER = "ORDER_BURGER";
 function orderPizza() {
@@ -13,6 +12,7 @@ function orderPizza() {
     }
 }
 
+const logger = reduxLogger.createLogger();
 function orderBurger() {
     return {
         type: ORDER_BURGER,
