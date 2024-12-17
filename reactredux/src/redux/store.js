@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-import pizzaReducer from "./pizza/pizzaReducers";
+import pizzaReducer from "./pizza/PizzaReducers";
 
 
 const store = createStore(pizzaReducer); 
